@@ -1,8 +1,8 @@
-# JavaScript Learning & Challenge Package
+# JavaScript Challenges
 
 ## Overview
 
-Welcome to the **JavaScript Learning Package**! This package is designed to help beginners and intermediate developers learn JavaScript through practical coding exercises and programming challenges. Whether you are just starting or looking to sharpen your skills, this package provides a variety of functions and challenges to enhance your understanding of JavaScript.
+Welcome to the **JavaScript Challenges Package**! This package is designed to help beginners and intermediate developers learn JavaScript through practical coding exercises and programming challenges. Whether you are just starting or looking to sharpen your skills, this package provides a variety of functions and challenges to enhance your understanding of JavaScript.
 
 ## Features
 
