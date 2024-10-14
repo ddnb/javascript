@@ -1,6 +1,6 @@
 {
   "name": "@lehungio/javascript",
-  "version": "1.0.3-rc",
+  "version": "1.0.3",
   "description": "Javascript Challenges",
   "main": "challenges.js",
   "scripts": {
