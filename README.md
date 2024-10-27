@@ -23,12 +23,27 @@ npm install @lehungio/javascript
 
 To use the functions provided in this package, simply require it in your JavaScript file:
 
-```js
-const javascript = require('@lehungio/javascript');
+- Import and Use the Classes in a Consumer Project
 
-// Call functions to learn and practice
-javascript.helloWorld(); // Outputs: Hello, World!
-javascript.hi("Alice");  // Outputs: Hi, Alice!
+```js
+// Import specific classes
+import { HelloWorld, DoorPassword } from '@lehungio/javascript';
+
+// Or import the entire module
+import * as Challenges from '@lehungio/javascript';
+
+const helloWorld = new Challenges.HelloWorld();
+helloWorld.greet(); // Output: "Hello, World!"
+```
+
+- If your project uses CommonJS, modify index.js to use module.exports:
+
+```js
+// index.js (CommonJS)
+const HelloWorld = require('./classes/challenges/HelloWorld.js');
+
+module.exports = { HelloWorld };
+
 ```
 
 ## Programming Challenges
@@ -52,6 +67,7 @@ To ensure everything is working correctly, you can run the tests included with t
 
 ```
 npm test
+npx jest __tests__/HelloWorld.test.js
 ```
 
 ## Contributing
