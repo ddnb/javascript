@@ -3,8 +3,12 @@
   "version": "1.0.3",
   "description": "Javascript Challenges",
   "main": "challenges.js",
+  "type": "module",
   "scripts": {
-    "test": "jest --coverage"
+    "main": "node challenges.js",
+    "test:node-experimental": "node --experimental-vm-modules node_modules/.bin/jest --coverage --verbose",
+    "test:node": "node node_modules/.bin/jest --coverage --verbose",
+    "test": "jest --config jest.config.cjs --coverage --verbose"
   },
   "repository": {
     "type": "git",
@@ -20,6 +24,9 @@
   },
   "homepage": "https://github.com/lehungio/javascript#readme",
   "devDependencies": {
+    "@babel/cli": "^7.25.9",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
     "jest": "^29.7.0"
   }
 }

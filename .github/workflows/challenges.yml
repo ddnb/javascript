@@ -2,9 +2,9 @@ name: Test JavaScript Challenges
 
 on:
   push:
-    branches: ["challenge*"]
-  # pull_request:
-    # branches: ["main"]
+    branches: ["challenge*", "test*"]
+  pull_request:
+    branches: ["main"]
 
 jobs:
   test:
