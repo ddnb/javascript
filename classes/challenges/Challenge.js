@@ -13,7 +13,7 @@ export class Challenge {
 
   display() {
     console.log("=====================================");
-    console.log(`           ${this.challengeName}     `);
+    console.log(`           ${this.#challengeName}     `);
     console.log("=====================================");
   }
 }
