@@ -7,6 +7,8 @@ module.exports = {
   },
   testEnvironment: 'node',
   moduleFileExtensions: ['js', 'json', 'node'],
+  "collectCoverage": true,
+  "coverageReporters": ["json", "html", "lcov", "text", "clover", "cobertura"]
 };
 
 // jest.config.js

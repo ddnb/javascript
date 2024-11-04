@@ -16,7 +16,7 @@ Welcome to the **JavaScript Challenges Package**! This package is designed to he
 You can install the package via npm:
 
 ```bash
-npm install @lehungio/javascript
+npm install @ddnb/javascript
 ```
 
 ## Usage
@@ -27,10 +27,10 @@ To use the functions provided in this package, simply require it in your JavaScr
 
 ```js
 // Import specific classes
-import { HelloWorld, DoorPassword } from '@lehungio/javascript';
+import { HelloWorld, DoorPassword } from '@ddnb/javascript';
 
 // Or import the entire module
-import * as Challenges from '@lehungio/javascript';
+import * as Challenges from '@ddnb/javascript';
 
 const helloWorld = new Challenges.HelloWorld();
 helloWorld.greet(); // Output: "Hello, World!"
@@ -81,4 +81,4 @@ If you have any questions or feedback, feel free to reach out!
 
 - Email: me@lehungio.com 
 - GitHub: @lehungio
-- [Challenge Me!!!](https://github.com/lehungio/javascript/issues/new?assignees=&labels=new&projects=&template=DEFAULT.md&title=Programming+Challenge%3A+%5BChallenge+Name%5D%5BNamespace%5D)
+- [Challenge Me!!!](https://github.com/ddnb/javascript/issues/new?assignees=&labels=new&projects=&template=DEFAULT.md&title=Programming+Challenge%3A+%5BChallenge+Name%5D%5BNamespace%5D)
