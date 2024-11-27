@@ -1,9 +1,17 @@
-import { HelloWorld } from './classes/challenges/HelloWorld.js';
-import FreelancerRates from './classes/challenges/FreelancerRates.js';
+// import
 import DoorPassword from './classes/challenges/DoorPassword.js';
-export { HelloWorld, FreelancerRates, DoorPassword };
+import { FreelancerRates } from './classes/challenges/FreelancerRates.js';
+import { HelloWorld } from './classes/challenges/HelloWorld.js';
+import { Strings } from './classes/Strings.js';
 
-// CommonJS
-// const HelloWorld = require('./classes/challenges/HelloWorld.js');
-// const DoorPassword = require('./classes/challenges/DoorPassword.js');
-// module.exports = { HelloWorld, DoorPassword };
+// Call the static method 'greet' directly on the class
+HelloWorld.greet(); // Default greeting
+HelloWorld.greet('Javascript'); // Custom greeting
+
+// Challenge 12: Juice Bar Helper
+
+// export
+export { DoorPassword };
+export { FreelancerRates };
+export { HelloWorld };
+export { Strings};
