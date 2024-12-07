@@ -10,6 +10,7 @@ HelloWorld.greet('Javascript'); // Custom greeting
 
 // Challenge #12: Juice Bar Helper
 // Challegne #14: Leader Board
+// Challenge #16: Rollercoaster Tycoon
 
 // export
 export { DoorPassword };
