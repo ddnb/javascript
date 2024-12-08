@@ -1,5 +1,5 @@
-import { Challenge } from '../classes/challenges/Challenge.js';
-import { createMagicArray } from '../functions/challenges/MagicArrayFunction.js';
+import { Challenge } from '../../classes/challenges/Challenge.js';
+import { createMagicArray } from '../../functions/challenges/MagicArrayFunction.js';
 
 describe('createMagicArray', () => {
   let magicArray;

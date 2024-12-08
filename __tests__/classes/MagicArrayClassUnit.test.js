@@ -1,8 +1,8 @@
-import MagicArray from '../classes/challenges/MagicArray.js';
-import { Challenge } from '../classes/challenges/Challenge.js';
+import MagicArray from '../../classes/challenges/MagicArray.js';
+import { Challenge } from '../../classes/challenges/Challenge.js';
 
 // Mock the Challenge class to control its behavior in tests
-jest.mock('../classes/challenges/Challenge.js');
+jest.mock('../../classes/challenges/Challenge.js');
 
 describe('MagicArray Class Unit', () => {
   let consoleSpy;

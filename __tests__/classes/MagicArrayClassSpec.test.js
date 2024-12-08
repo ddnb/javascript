@@ -1,4 +1,4 @@
-import MagicArray from '../classes/challenges/MagicArray';
+import MagicArray from '../../classes/challenges/MagicArray';
 
 describe('MagicArray Class', () => {
   let consoleSpy;

@@ -1,4 +1,4 @@
-import { totalBirdCount, birdsInWeek, fixBirdCountLog } from '../modules/challenges/BirdWatchingModule';
+import { totalBirdCount, birdsInWeek, fixBirdCountLog } from '../../modules/challenges/BirdWatchingModule';
 
 describe('totalBirdCount', () => {
   test('calculates the correct total number of birds', () => {

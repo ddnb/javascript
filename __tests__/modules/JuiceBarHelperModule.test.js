@@ -2,7 +2,7 @@ import {
   timeToMixJuice,
   limesToCut,
   remainingOrders,
-} from '../modules/challenges/JuiceBarHelperModule';
+} from '../../modules/challenges/JuiceBarHelperModule';
 
 describe("timeToMixJuice", () => {
   test("returns the correct time for 'Pure Strawberry Joy'", () => {

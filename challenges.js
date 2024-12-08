@@ -8,7 +8,10 @@ import { Strings } from './classes/Strings.js';
 HelloWorld.greet(); // Default greeting
 HelloWorld.greet('Javascript'); // Custom greeting
 
-// Challenge 12: Juice Bar Helper
+// Challenge #12: Juice Bar Helper
+// Challegne #14: Leader Board
+// Challenge #16: Rollercoaster Tycoon
+// Challenge #20: Lucky Number
 
 // export
 export { DoorPassword };
