@@ -4,7 +4,7 @@ import {
   ticketStatus,
   simpleTicketStatus,
   gtcVersion,
-} from '../modules/challenges/RollercoasterTycoonModule';
+} from '../../modules/challenges/RollercoasterTycoonModule';
 
 const testTickets = () => {
   return {

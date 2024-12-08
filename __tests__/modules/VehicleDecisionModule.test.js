@@ -2,7 +2,7 @@ import {
   needsLicense,
   chooseVehicle,
   calculateResellPrice,
-} from '../modules/challenges/VehicleDecisionModule';
+} from '../../modules/challenges/VehicleDecisionModule';
 
 describe('needsLicense', () => {
   test('requires a license for a car', () => {

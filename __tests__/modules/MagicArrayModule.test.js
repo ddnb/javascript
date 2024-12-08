@@ -9,7 +9,7 @@ import {
   removeItemFromTop,
   removeItemAtBottom,
   checkSizeOfStack,
-} from '../modules/challenges/MagicArrayModule';
+} from '../../modules/challenges/MagicArrayModule';
 
 describe('pick a card', () => {
   test('get the first card', () => {

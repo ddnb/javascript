@@ -1,4 +1,4 @@
-import { FreelancerRates } from '../classes/challenges/FreelancerRates.js';
+import { FreelancerRates } from '../../classes/challenges/FreelancerRates.js';
 
 describe('FreelancerRates', () => {
   const ratePerHour = 50; // Example hourly rate

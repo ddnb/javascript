@@ -1,6 +1,6 @@
 // jest __tests__/DoorPassword.test.js
-import { Challenge } from '../classes/challenges/Challenge.js';
-import DoorPassword from '../classes/challenges/DoorPassword.js';
+import { Challenge } from '../../classes/challenges/Challenge.js';
+import DoorPassword from '../../classes/challenges/DoorPassword.js';
 
 // Mock the Challenge class
 // jest.mock('../classes/challenges/Challenge.js', () => {

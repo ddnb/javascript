@@ -1,4 +1,4 @@
-import { Challenge } from '../classes/challenges/Challenge.js';
+import { Challenge } from '../../classes/challenges/Challenge.js';
 
 describe('Challenge Class', () => {
   let consoleSpy;

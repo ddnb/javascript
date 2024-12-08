@@ -5,7 +5,7 @@ import {
   updateScore,
   applyMondayBonus,
   normalizeScore,
-} from '../modules/challenges/LeaderBoardModule';
+} from '../../modules/challenges/LeaderBoardModule';
 
 describe("createScoreBoard", () => {
   test("creates a new board with a test entry", () => {

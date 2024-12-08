@@ -1,4 +1,4 @@
-import { HelloWorld } from '../classes/challenges/HelloWorld.js';
+import { HelloWorld } from '../../classes/challenges/HelloWorld.js';
 
 describe('HelloWorld Challenge', () => {
   let consoleSpy;
