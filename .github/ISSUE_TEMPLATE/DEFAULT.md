@@ -13,6 +13,14 @@ projects: "Opensource"
 
 Welcome to the **Hello, World! Programming Challenge**! This challenge is designed for beginners to familiarize themselves with the basics of programming and to understand how to output text to the console. The "Hello, World!" program is often the first program written by those learning a new programming language.
 
+## Concept
+
+The "Hello, World!" program is a simple exercise that introduces the basic syntax and structure of a programming language. It is a fundamental step in learning how to write and execute code.
+
+## Learning Goal
+
+The goal of this challenge is to help you set up your programming environment, understand the basic syntax of your chosen language, and learn how to output text to the console.
+
 ## Challenge Description
 
 The objective of this challenge is to create a program that prints "Hello, World!" to the console. This simple exercise will help you set up your programming environment and understand the syntax of your chosen language.
