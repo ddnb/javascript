@@ -136,3 +136,19 @@ console.log(`Challenge 23 - Coordinate Transformation: composeTransform(translat
 const memoizedTransform = memoizeTransform(composedTransform);
 console.log(`Challenge 23 - Coordinate Transformation: memoizeTransform(composeTransform)(${x1}, ${y1}) => ${memoizedTransform(x1, y1)}`);
 console.log(`Challenge 23 - Coordinate Transformation: memoizeTransform(composeTransform)(${x1}, ${y1}) => ${memoizedTransform(x1, y1)}`);
+
+// Challenge #24: https://github.com/ddnb/javascript/issues/24
+import { notify, notifyIt } from './modules/challenges/notifier.js';
+console.log(`Challenge 24 - Notifier: notifyIt('Hello, World!') => ${notifyIt('Hello, World!')}`);
+import { order } from './modules/challenges/grocer.js';
+import { onError, onSuccess, orderFromGrocer, postOrder } from './modules/challenges/fruit-picker.js';
+const query = { variety: 'apple', quantity: 10 };
+orderFromGrocer(query, onSuccess, onError);
+console.log(`Challenge 24 - Notifier: orderFromGrocer(${JSON.stringify(query)}, onSuccess, onError)`);
+const variety = 'banana';
+const quantity = 5;
+postOrder(variety, quantity);
+console.log(`Challenge 24 - Notifier: postOrder(${variety}, ${quantity})`);
+
+
+
