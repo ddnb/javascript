@@ -174,3 +174,17 @@ console.log(`Challenge 27 - Enchantments Transformative: sandwichTrick([1, 2, 3,
 console.log(`Challenge 27 - Enchantments Transformative: twoIsSpecial() => ${twoIsSpecial([1, 2, 3, 4])}`);
 console.log(`Challenge 27 - Enchantments Transformative: perfectlyOrdered([1, 2, 3, 4]) => ${perfectlyOrdered([1, 2, 3, 4])}`);
 console.log(`Challenge 27 - Enchantments Transformative: reorder([1, 2, 3, 4]) => ${reorder([1, 2, 3, 4])}`);
+
+// Challenge #28: https://github.com/ddnb/javascript/issues/28
+import { pizzaPrice, orderPrice } from './modules/challenges/pizza-order.js';
+console.log(`Challenge 28 - Pizza Order: pizzaPrice('Margherita') => ${pizzaPrice('Margherita')}`);
+console.log(`Challenge 28 - Pizza Order: pizzaPrice('Formaggio') => ${pizzaPrice('Formaggio')}`);
+console.log(`Challenge 28 - Pizza Order: pizzaPrice('Caprese') => ${pizzaPrice('Caprese')}`);
+console.log(`Challenge 28 - Pizza Order: pizzaPrice('Margherita', 'ExtraSauce') => ${pizzaPrice('Margherita', 'ExtraSauce')}`);
+console.log(`Challenge 28 - Pizza Order: pizzaPrice('Caprese', 'ExtraToppings') => ${pizzaPrice('Caprese', 'ExtraToppings')}`);
+console.log(`Challenge 28 - Pizza Order: pizzaPrice('Formaggio', 'ExtraSauce', 'ExtraToppings') => ${pizzaPrice('Formaggio', 'ExtraSauce', 'ExtraToppings')}`);
+console.log(`Challenge 28 - Pizza Order: pizzaPrice('Caprese', 'ExtraSauce', 'ExtraToppings') => ${pizzaPrice('Caprese', 'ExtraSauce', 'ExtraToppings')}`);
+console.log(`Challenge 28 - Pizza Order: pizzaPrice('Caprese', 'ExtraToppings', 'ExtraToppings', 'ExtraToppings', 'ExtraToppings') => ${pizzaPrice('Caprese', 'ExtraToppings', 'ExtraToppings', 'ExtraToppings', 'ExtraToppings')}`);
+const orders = [ { pizza: 'Margherita', extras: [] }, { pizza: 'Formaggio', extras: [ 'ExtraSauce' ] }, { pizza: 'Caprese', extras: [ 'ExtraToppings' ] } ];
+console.log(`Challenge 28 - Pizza Order: orderPrice(${JSON.stringify(orders)}) => ${orderPrice(orders)}`);
+
