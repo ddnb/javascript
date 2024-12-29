@@ -150,5 +150,15 @@ const quantity = 5;
 postOrder(variety, quantity);
 console.log(`Challenge 24 - Notifier: postOrder(${variety}, ${quantity})`);
 
+// Challenge #25: https://github.com/ddnb/javascript/issues/25
+import { getCardPosition, doesStackIncludeCard, isEachCardEven, doesStackIncludeOddCard, getFirstOddCard, getFirstEvenCardPosition } from './modules/challenges/enchantments2.js';
+console.log(`Challenge 25 - Enchantments 2: getCardPosition([1, 2, 3], 1) => ${getCardPosition([1, 2, 3], 1)}`);
+console.log(`Challenge 25 - Enchantments 2: doesStackIncludeCard([1, 2, 3], 1) => ${doesStackIncludeCard([1, 2, 3], 1)}`);
+console.log(`Challenge 25 - Enchantments 2: isEachCardEven([2, 4, 6]) => ${isEachCardEven([2, 4, 6])}`);
+console.log(`Challenge 25 - Enchantments 2: doesStackIncludeOddCard([2, 5]) => ${doesStackIncludeOddCard([2, 5])}`);
+console.log(`Challenge 25 - Enchantments 2: getFirstOddCard([2, 4, 1, 3]) => ${getFirstOddCard([2, 4, 1, 3])}`);
+console.log(`Challenge 25 - Enchantments 2: getFirstEvenCardPosition([2, 4, 1, 3]) => ${getFirstEvenCardPosition([2, 4, 1, 3])}`);
+
+
 
 
