@@ -188,3 +188,10 @@ console.log(`Challenge 28 - Pizza Order: pizzaPrice('Caprese', 'ExtraToppings', 
 const orders = [ { pizza: 'Margherita', extras: [] }, { pizza: 'Formaggio', extras: [ 'ExtraSauce' ] }, { pizza: 'Caprese', extras: [ 'ExtraToppings' ] } ];
 console.log(`Challenge 28 - Pizza Order: orderPrice(${JSON.stringify(orders)}) => ${orderPrice(orders)}`);
 
+// Challenge #29: https://github.com/ddnb/javascript/issues/29
+import { buildBirthdaySign, graduationFor, costOf } from './modules/challenges/custom-signs.js';
+console.log(`Challenge 29 - Custom Signs: buildBirthdaySign(49) => ${buildBirthdaySign(49)}`);
+console.log(`Challenge 29 - Custom Signs: buildBirthdaySign(51) => ${buildBirthdaySign(51)}`);
+console.log(`Challenge 29 - Custom Signs: graduationFor('Lehung IO', 2011) => ${graduationFor('Lehung IO', 2011)}`);
+console.log(`Challenge 29 - Custom Signs: costOf('Happy Birthday!', 'dollars') => ${costOf('Happy Birthday!', 'dollars')}`);
+console.log(`Challenge 29 - Custom Signs: costOf('Congratulations Kuromi\nClass of 2013', 'dollars') => ${costOf('Congratulations Kuromi\nClass of 2013', 'dollars')}`);

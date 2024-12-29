@@ -19,4 +19,14 @@ export class Strings {
     const [firstWord, ...rest] = sentence.split(' ');
     return [Strings.capitalize(firstWord), ...rest].join(' ');
   }
+
+  /**
+   * Counts the number of characters in a string, including spaces.
+   * @param {string} str
+   * @returns {number}
+   */
+  static countCharacters(str) {
+    if (str == null) return 0;
+    return str.length;
+  }
 }
