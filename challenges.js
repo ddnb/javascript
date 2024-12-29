@@ -195,3 +195,12 @@ console.log(`Challenge 29 - Custom Signs: buildBirthdaySign(51) => ${buildBirthd
 console.log(`Challenge 29 - Custom Signs: graduationFor('Lehung IO', 2011) => ${graduationFor('Lehung IO', 2011)}`);
 console.log(`Challenge 29 - Custom Signs: costOf('Happy Birthday!', 'dollars') => ${costOf('Happy Birthday!', 'dollars')}`);
 console.log(`Challenge 29 - Custom Signs: costOf('Congratulations Kuromi\nClass of 2013', 'dollars') => ${costOf('Congratulations Kuromi\nClass of 2013', 'dollars')}`);
+
+// Challenge #30: https://github.com/ddnb/javascript/issues/30
+import { Size, Position, ProgramWindow, changeWindow } from './modules/challenges/windowing-system.js';
+const programWindow = new ProgramWindow();
+console.log(`Challenge 30 - Windowing System: changeWindow(programWindow) => ${changeWindow(programWindow)}`);
+const size = new Size(110, 220);
+console.log(`Challenge 30 - Windowing System: size.resize(120, 330) => ${size.resize(120, 330)}`);
+const position = new Position(10, 20);
+console.log(`Challenge 30 - Windowing System: position.move(30, 40) => ${position.move(30, 40)}`);
