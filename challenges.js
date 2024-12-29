@@ -204,3 +204,15 @@ const size = new Size(110, 220);
 console.log(`Challenge 30 - Windowing System: size.resize(120, 330) => ${size.resize(120, 330)}`);
 const position = new Position(10, 20);
 console.log(`Challenge 30 - Windowing System: position.move(30, 40) => ${position.move(30, 40)}`);
+
+// Challenge #31: https://github.com/ddnb/javascript/issues/31
+import { removeDuplicates, hasTrack, addTrack, deleteTrack, listArtists } from './modules/challenges/ozans-playlist.js';
+const playlist = [ 'Two Paintings and a Drum - Carl Cox', 'Leash Called Love - The Sugarcubes', 'Two Paintings and a Drum - Carl Cox' ];
+console.log(`Challenge 31 - Ozan's Playlist: removeDuplicates(${JSON.stringify(playlist)}) => ${removeDuplicates(playlist)}`);
+const track = 'Big Science - Laurie Anderson';
+console.log(`Challenge 31 - Ozan's Playlist: hasTrack(${JSON.stringify(playlist)}, ${track}) => ${hasTrack(playlist, track)}`);
+const trackToAdd = 'Jigsaw Feeling - Siouxsie and the Banshees';
+console.log(`Challenge 31 - Ozan's Playlist: addTrack(${JSON.stringify(playlist)}, ${trackToAdd}) => ${addTrack(playlist, trackToAdd)}`);
+const trackToDelete = 'Leash Called Love - The Sugarcubes';
+console.log(`Challenge 31 - Ozan's Playlist: deleteTrack(${JSON.stringify(playlist)}, ${trackToDelete}) => ${deleteTrack(playlist, trackToDelete)}`);
+console.log(`Challenge 31 - Ozan's Playlist: listArtists(${JSON.stringify(playlist)}) => ${listArtists(playlist)}`);
