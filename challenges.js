@@ -164,3 +164,13 @@ import { cardTypeCheck, determineOddEvenCards } from './modules/challenges/encha
 console.log(`Challenge 26 - Enchantments Loop: cardTypeCheck([1, 2, 3, 1, 1, 1], 1) => ${cardTypeCheck([1, 2, 3, 1, 1, 1], 1)}`);
 console.log(`Challenge 26 - Enchantments Loop: determineOddEvenCards([1, 2, 3], isEven:false) => ${determineOddEvenCards([1, 2, 3], false)} not even cards`);
 console.log(`Challenge 26 - Enchantments Loop: determineOddEvenCards([1, 2, 3], isEven:true) => ${determineOddEvenCards([1, 2, 3], true)} even cards`);
+
+// Challenge #27: https://github.com/ddnb/javascript/issues/27
+import { seeingDouble, threeOfEachThree, middleTwo, sandwichTrick, twoIsSpecial, perfectlyOrdered,  reorder  } from './modules/challenges/enchantments-transformative.js';
+console.log(`Challenge 27 - Enchantments Transformative: seeingDouble([1, 2, 3, 4]) => ${seeingDouble([1, 2, 3, 4])}`);
+console.log(`Challenge 27 - Enchantments Transformative: threeOfEachThree([3]) => ${threeOfEachThree([3])}`);
+console.log(`Challenge 27 - Enchantments Transformative: middleTwo([1, 2, 3, 4]) => ${middleTwo([1, 2, 3, 4])}`);
+console.log(`Challenge 27 - Enchantments Transformative: sandwichTrick([1, 2, 3, 4]) => ${sandwichTrick([1, 2, 3, 4])}`);
+console.log(`Challenge 27 - Enchantments Transformative: twoIsSpecial() => ${twoIsSpecial([1, 2, 3, 4])}`);
+console.log(`Challenge 27 - Enchantments Transformative: perfectlyOrdered([1, 2, 3, 4]) => ${perfectlyOrdered([1, 2, 3, 4])}`);
+console.log(`Challenge 27 - Enchantments Transformative: reorder([1, 2, 3, 4]) => ${reorder([1, 2, 3, 4])}`);
