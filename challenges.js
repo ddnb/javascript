@@ -216,3 +216,9 @@ console.log(`Challenge 31 - Ozan's Playlist: addTrack(${JSON.stringify(playlist)
 const trackToDelete = 'Leash Called Love - The Sugarcubes';
 console.log(`Challenge 31 - Ozan's Playlist: deleteTrack(${JSON.stringify(playlist)}, ${trackToDelete}) => ${deleteTrack(playlist, trackToDelete)}`);
 console.log(`Challenge 31 - Ozan's Playlist: listArtists(${JSON.stringify(playlist)}) => ${listArtists(playlist)}`);
+
+// Challenge #32: https://github.com/ddnb/javascript/issues/31
+import { checkHumidityLevel, reportOverheating, monitorTheMachine, ArgumentError, OverheatingError } from './modules/challenges/factory-sensors.js';
+console.log(`Challenge 32 - Factory Sensors: checkHumidityLevel(99) => ${checkHumidityLevel(99)}`);
+console.log(`Challenge 32 - Factory Sensors: checkHumidityLevel(53) => ${checkHumidityLevel(53)}`);
+console.log(`Challenge 32 - Factory Sensors: reportOverheating(99) => ${reportOverheating(99)}`);
