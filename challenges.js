@@ -159,6 +159,8 @@ console.log(`Challenge 25 - Enchantments 2: doesStackIncludeOddCard([2, 5]) => $
 console.log(`Challenge 25 - Enchantments 2: getFirstOddCard([2, 4, 1, 3]) => ${getFirstOddCard([2, 4, 1, 3])}`);
 console.log(`Challenge 25 - Enchantments 2: getFirstEvenCardPosition([2, 4, 1, 3]) => ${getFirstEvenCardPosition([2, 4, 1, 3])}`);
 
-
-
-
+// Challenge #26: https://github.com/ddnb/javascript/issues/26
+import { cardTypeCheck, determineOddEvenCards } from './modules/challenges/enchantments-loop.js';
+console.log(`Challenge 26 - Enchantments Loop: cardTypeCheck([1, 2, 3, 1, 1, 1], 1) => ${cardTypeCheck([1, 2, 3, 1, 1, 1], 1)}`);
+console.log(`Challenge 26 - Enchantments Loop: determineOddEvenCards([1, 2, 3], isEven:false) => ${determineOddEvenCards([1, 2, 3], false)} not even cards`);
+console.log(`Challenge 26 - Enchantments Loop: determineOddEvenCards([1, 2, 3], isEven:true) => ${determineOddEvenCards([1, 2, 3], true)} even cards`);
