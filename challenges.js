@@ -106,3 +106,33 @@ console.log(`Challenge 22 - Enchantments: getFirstCard([3]) => ${getFirstCard([3
 console.log(`Challenge 22 - Enchantments: getSecondCard([10, 4]) => ${getSecondCard([10, 4])}`);
 console.log(`Challenge 22 - Enchantments: swapTopTwoCards([3, 6]) => ${swapTopTwoCards([3, 6])}`);
 console.log(`Challenge 22 - Enchantments: discardTopCard([7]) => ${discardTopCard([7])}`);
+
+// Challenge #23: https://github.com/ddnb/javascript/issues/23
+import { translate2d, scale2d, composeTransform, memoizeTransform } from './modules/challenges/coordinate-transformation.js';
+const dx = 3;
+const dy = -5;
+const x1 = 0;
+const y1 = 0;
+const expected = [3, -5];
+const translator = translate2d(dx, dy);
+console.log(`Challenge 23 - Coordinate Transformation: translate2d(${dx}, ${dy})(${x1}, ${y1}) => ${translator(x1, y1)}`);
+const x2 = 4;
+const y2 = 5;
+const reusedExpected = [7, 0];
+console.log(`Challenge 23 - Coordinate Transformation: translate2d(${dx}, ${dy})(${x2}, ${y2}) => ${translator(x2, y2)}`);
+const dx2 = 4;
+const dy2 = 2;
+const x12 = 1;
+const y12 = 1;
+const expected2 = [4, 2];
+const scaler = scale2d(dx2, dy2);
+console.log(`Challenge 23 - Coordinate Transformation: scale2d(${dx2}, ${dy2})(${x12}, ${y12}) => ${scaler(x12, y12)}`);
+const x22 = -2;
+const y22 = 5;
+const reusedExpected2 = [-8, 10];
+console.log(`Challenge 23 - Coordinate Transformation: scale2d(${dx2}, ${dy2})(${x22}, ${y22}) => ${scaler(x22, y22)}`);
+const composedTransform = composeTransform(translator, scaler);
+console.log(`Challenge 23 - Coordinate Transformation: composeTransform(translate2d, scale2d)(${x1}, ${y1}) => ${composedTransform(x1, y1)}`);
+const memoizedTransform = memoizeTransform(composedTransform);
+console.log(`Challenge 23 - Coordinate Transformation: memoizeTransform(composeTransform)(${x1}, ${y1}) => ${memoizedTransform(x1, y1)}`);
+console.log(`Challenge 23 - Coordinate Transformation: memoizeTransform(composeTransform)(${x1}, ${y1}) => ${memoizedTransform(x1, y1)}`);
