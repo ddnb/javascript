@@ -20,3 +20,11 @@ test('capitalizeFirstWord should capitalize the first word of a sentence', () =>
   expect(Strings.capitalizeFirstWord(null)).toBe(null);
   expect(Strings.capitalizeFirstWord(undefined)).toBe(undefined);
 });
+
+// Test the countCharacters method
+test('countCharacters should return the number of characters in a string', () => {
+  expect(Strings.countCharacters('hello')).toBe(5);
+  expect(Strings.countCharacters('')).toBe(0);
+  expect(Strings.countCharacters(null)).toBe(0);
+  expect(Strings.countCharacters(undefined)).toBe(0);
+});
