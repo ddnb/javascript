@@ -222,3 +222,34 @@ import { checkHumidityLevel, reportOverheating, monitorTheMachine, ArgumentError
 console.log(`Challenge 32 - Factory Sensors: checkHumidityLevel(99) => ${checkHumidityLevel(99)}`);
 console.log(`Challenge 32 - Factory Sensors: checkHumidityLevel(53) => ${checkHumidityLevel(53)}`);
 console.log(`Challenge 32 - Factory Sensors: reportOverheating(99) => ${reportOverheating(99)}`);
+
+// Challenge #33: https://github.com/ddnb/javascript/issues/32
+// import { ExternalApi } from './modules/challenges/translation-service/api.js';
+// const api = new ExternalApi()
+//   .register('jIyaj', 'I understand', 100)
+//   .register('jIyajbe’', null)
+//   .register('jIyajbe’', "I don't understand", 100);
+// import { TranslationService } from './modules/challenges/translation-service/service.js';
+// const service = new TranslationService(api);
+// (async () => {
+//   console.log(`Challenge 33 - Translation Service: service.free('jIyaj') => ${await service.free('jIyaj')}`);
+//   console.log(`Challenge 33 - Translation Service: service.free('jIyajbe’') => ${await service.free('jIyajbe’')}`);
+//   console.log(`Challenge 33 - Translation Service: service.free('majQa’') => ${await service.free('majQa’')}`);
+// })();
+
+import { ExternalApi } from './modules/challenges/api/api.js';
+import { TranslationService } from './modules/challenges/api/service.js';
+
+const api = new ExternalApi()
+  .register('Wakaru', 'I understand', 100)
+  .register('Wakarimasen', "I don't understand", 100);
+
+const service = new TranslationService(api);
+let translate = service.free('Wakaru');
+(async () => {
+  console.log('Challenge 33 - Translation Service: service.free(\'Wakaru\') =>', await translate);
+  console.log('Challenge 33 - Translation Service: service.free(\'Wakarimasen\') =>', await service.free('Wakarimasen'));
+})();
+
+// let fetch = await service.free('jIyaj');
+// console.log(fetch);

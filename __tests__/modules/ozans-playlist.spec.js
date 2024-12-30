@@ -4,7 +4,7 @@ import {
   hasTrack,
   listArtists,
   removeDuplicates,
-} from './ozans-playlist';
+} from '../../modules/challenges/ozans-playlist';
 
 describe('removeDuplicates', () => {
   test('works for an empty playlist', () => {
